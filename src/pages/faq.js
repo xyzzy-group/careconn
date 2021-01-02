@@ -144,8 +144,15 @@ const IndexPage = () => {
       <a href="/">
         Care Connection
         </a>
-        <br />
-        <span style={headingAccentStyles}>FREQUENTY ASKED QUESTIONS 
+        <div></div>
+        <a href="/faq">
+        FAQ
+        </a>
+        <span style={headingAccentStyles}>
+          <a href="/faq">
+
+          FREQUENTY ASKED QUESTIONS 
+          </a>
         </span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
