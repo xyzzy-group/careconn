@@ -139,13 +139,14 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>FREQUENTY ASKED QUESTIONS </title>
       <h1 style={headingStyles}>
-        <a href="/">
+      <a href="/">
         Care Connection
         </a>
         <br />
-        <span style={headingAccentStyles}>Talk to someone who can help</span>
+        <span style={headingAccentStyles}>FREQUENTY ASKED QUESTIONS 
+        </span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
@@ -153,12 +154,6 @@ const IndexPage = () => {
       <div className="logo-contain">
         <img src={require('../images/logo.png')}/>
       </div>
-      <div>FREQUENTY ASKED QUESTIONS
-
-      </div>
-      <a
-       href="/faq"
-      >FAQ</a>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
