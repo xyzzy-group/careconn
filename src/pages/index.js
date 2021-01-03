@@ -1,10 +1,10 @@
 import * as React from "react"
+import NavBar from "../partials/navbar";
 require('../styles/global.css')
 
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
@@ -14,16 +14,6 @@ const headingStyles = {
 }
 const headingAccentStyles = {
   color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
 }
 const listStyles = {
   marginBottom: 96,
@@ -140,7 +130,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <NavBar title="Home Page" />
       <h1 style={headingStyles}>
         <a href="/">
         Care Connection
@@ -150,19 +140,8 @@ const IndexPage = () => {
         FAQ
         </a>
         <span style={headingAccentStyles}>Talk to someone who can help</span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <div className="logo-contain">
-        <img src={require('../images/logo.png')} alt="care connection logo"/>
-      </div>
-      <div>FREQUENTY ASKED QUESTIONS
 
-      </div>
-      <a
-       href="/faq"
-      >FAQ</a>
+      </h1>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
