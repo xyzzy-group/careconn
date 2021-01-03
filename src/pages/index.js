@@ -1,4 +1,5 @@
 import * as React from "react"
+require('../styles/global.css')
 
 // styles
 const pageStyles = {
@@ -154,7 +155,7 @@ const IndexPage = () => {
         </span>
       </h1>
       <div className="logo-contain">
-        <img src={require('../images/logo.png')}/>
+        <img src={require('../images/logo.png')} alt="care connection logo"/>
       </div>
       <div>FREQUENTY ASKED QUESTIONS
 
