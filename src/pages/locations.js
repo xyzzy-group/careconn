@@ -6,11 +6,13 @@ require('../styles/global.css')
 const pageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  marginLeft: 'auto',
+  marginRight: 'auto'
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 620,
+  marginBottom: 16,
+  textAlign: 'center',
 }
 const headingAccentStyles = {
   color: "#663399",
@@ -51,78 +53,17 @@ const docLink = {
 // data
 const links = [
   {
-    text: "Depression",
+    text: "First Location",
     url: "",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description:"2200 Michener Street\nSuite 20\nPhiladelphia, PA 19115\n(267) 544-1825",
     color: "#E95800",
   },
   {
-    text: "Anxiety",
+    text: "Second Location",
     url: "https://www.gatsbyjs.com/docs/how-to/",
     description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
+      "1 Oxford Valley\nSuite 812\nLanghorne, PA 19047\n(267) 544-1825",
     color: "#1099A8",
-  },
-  {
-    text: "Anger Management",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Shyness/Social Discomfort",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Successful Parenting",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#000000",
-  },
-  {
-    text: "Achieving Your Life Goals",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Healthy Lifestyle",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Difficulty at Work",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Marriage/Relationship Counseling",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Compulsive Gambling",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Grief & Loss",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Domestic Violence ",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Suicidal Thinking",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
   },
 ]
 
@@ -132,25 +73,9 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <NavBar title="Locations"/>
       <h1 style={headingStyles}>
-        <a href="/">
-        Care Connection
-        </a>
-        <div></div>
-        <a href="/faq">
-        FAQ
-        </a>
-        <span style={headingAccentStyles}>Talk to someone who can help</span>
-
+        <span style={headingAccentStyles}>Locations</span>
       </h1>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
         {links.map(link => (
           <li style={{ ...listItemStyles, color: link.color }}>
             <span>

@@ -5,15 +5,17 @@ import NavBar from "../partials/navbar";
 const pageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
+  marginLeft: 'auto',
+  marginRight: 'auto'
+}
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 620,
-};
+  marginBottom: 16,
+  textAlign: 'center',
+}
 const headingAccentStyles = {
   color: "#663399",
-};
+}
 const paragraphStyles = {
   marginBottom: 48,
 };
@@ -53,86 +55,51 @@ const descriptionStyle = {
 };
 
 const docLink = {
-  text: "We’re Here to Help You With",
+  text: "Things you may consider asking",
   url: "https://www.gatsbyjs.com/docs/",
   color: "#8954A8",
 };
 // data
 const links = [
   {
-    text: "Depression",
+    text: "How long has Care Connection been in business?",
     url: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "We were founded in 1958 and did business in Philadelphia as Northeast Psychological Clinic until 1990, when we changed our name to Care Connection. We have been providing psychological counseling services during all of that time.",
     color: "#E95800",
   },
   {
-    text: "Anxiety",
+    text: "Do we prescribe medications?",
     url: "https://www.gatsbyjs.com/docs/how-to/",
     description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
+      "Yes, if needed as part of your therapy, our on-site psychiatrist or psychiatric nurse practictioner can prescribe medications and follow-up with you to track their effectiveness.",
     color: "#1099A8",
   },
   {
-    text: "Anger Management",
+    text: "Do you take insurance?",
     url: "https://www.gatsbyjs.com/docs/reference/",
     description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
+      "Yes, we accept most insurance and Medicare. We also have many clients who pay directly without using insurance benefits.",
     color: "#BC027F",
   },
   {
-    text: "Shyness/Social Discomfort",
+    text: "How do I get an appointment?",
     url: "https://www.gatsbyjs.com/docs/conceptual/",
     description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
+      "Call us at 215-331-3200 to speak to our staff, who will connect you with an appropriate therapist. You can then set up a time and location which will fit your needs.",
     color: "#0D96F2",
   },
   {
-    text: "Successful Parenting",
+    text: "How does counseling work?",
     url: "https://www.gatsbyjs.com/plugins",
     description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "In most cases you will meet with a therapist individually and establish trust with them so that you feel free to discuss the changes and goals you would like to achieve in your life..",
     color: "#000000",
   },
   {
-    text: "Achieving Your Life Goals",
+    text: "How often do you meet?",
     description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Healthy Lifestyle",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Difficulty at Work",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Marriage/Relationship Counseling",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Compulsive Gambling",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Grief & Loss",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Domestic Violence ",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-  },
-  {
-    text: "Suicidal Thinking",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
+      "That will be decided in consultation with your therapist, but often there will be weekly meetings at the beginning of the process and then tapering to a bi-weekly or monthly schedule will be more appropriate. In some cases, just a few meetings or “brief therapy” works well for specific problems."
   },
 ];
 
@@ -142,28 +109,9 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <NavBar title="FAQ"/>
       <h1 style={headingStyles}>
-        <a href="/">Care Connection</a>
-        <div></div>
-        <a href="/faq">FAQ</a>
-        <span style={headingAccentStyles}>
-          <a href="/faq">FREQUENTY ASKED QUESTIONS</a>
-        </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
+        <span style={headingAccentStyles}>Frequenty Asked Questions</span>
       </h1>
-      <div className="logo-contain">
-        <img src={require("../images/logo.png")} />
-      </div>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
         {links.map((link) => (
           <li style={{ ...listItemStyles, color: link.color }}>
             <span>
