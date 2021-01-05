@@ -1,5 +1,6 @@
 import * as React from "react";
 import NavBar from "../partials/navbar";
+require('../styles/global.css')
 
 // styles
 const pageStyles = {
