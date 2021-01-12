@@ -6,6 +6,7 @@ const NavBar = (props) => {
     <>
       <title>{props.title}</title>
       <nav className="nav">
+        <div className="logo-small"><img className="img-file" src={require("../images/titlelogo.png")}></img></div>
         <ul className="container">
           <li>
             <a href="/careconn">Home</a>

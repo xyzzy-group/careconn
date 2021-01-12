@@ -4,24 +4,45 @@
 }
 
 .nav {
-  background-color: #282828;
-  padding: 0 9.75em;
+  background-color: #E0E0E0;
   margin: 0;
   text-align: center;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+
+}
+
+.logo-small {
+  width: 250px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.img-file {
+  border-radius: 8px;
+  border-style: solid gray 2px;
+  padding: 4px;
 }
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+}
+
+.care-txt {
+  font-family: 'Audiowide', cursive;
+  color: #10c8ae;
+  text-transform: uppercase;
+
 }
 
 ul {
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 li {
-  color: white;
   padding: 16px;
   list-style: none;
   font-weight: 600;
@@ -46,7 +67,7 @@ img {
 }
 
 a {
-  color: white;
+  color: rgb(102, 51, 153);
   text-decoration: none;
   font-family: -apple-system, Roboto, sans-serif, serif
 }
