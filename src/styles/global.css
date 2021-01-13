@@ -1,3 +1,19 @@
+.logo-small {
+  display: none;
+  width: 250px;
+  padding: 4px;
+  margin: 4px;
+}
+
+@media only screen and (min-width: 500px){
+  .logo-small {
+    display: block;
+    width: 250px;
+    padding: 4px;
+    margin: 4px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +29,6 @@
   display: flex;
   width: 100%;
 
-}
-
-.logo-small {
-  width: 250px;
-  padding: 4px;
-  margin: 4px;
 }
 
 .img-file {
