@@ -28,7 +28,7 @@ const IndexPage = () => {
       </h1>
       <ul>
       <div className="home-contain">
-        <section className="banner"></section>
+        <section className="banner">YOUR PATH TO WELLNESS</section>
       </div>
       <div className="service-contain">
 
