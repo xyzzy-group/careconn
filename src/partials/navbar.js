@@ -10,19 +10,19 @@ const NavBar = (props) => {
         <div className="logo-small"><img className="img-file" src={require("../images/titlelogo.png")}></img></div>
         <ul className="container">
           <li>
-            <a href={Secret.home}>Home</a>
+            <a href={Secret("home")}>Home</a>
           </li>
           <li>
-            <a href={Secret.services}>Services</a>
+            <a href={Secret("services")}>Services</a>
           </li>
           <li>
-            <a href="/careconn/schedule">Scheduler</a>
+            <a href={Secret("schedule")}>Schedule</a>
           </li>
           <li>
-            <a href="/careconn/locations">Locations</a>
+            <a href={Secret("locations")}>Locations</a>
           </li>
           <li>
-            <a href="/careconn/faq">FAQ</a>
+            <a href={Secret("faq")}>FAQ</a>
           </li>
         </ul>
       </nav>
