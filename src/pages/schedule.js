@@ -1,5 +1,6 @@
 import * as React from "react"
 import NavBar from "../partials/navbar";
+import Footer from "../partials/footer";
 require('../styles/global.css')
 
 // styles
@@ -127,6 +128,7 @@ const IndexPage = () => {
                 <span style={headingAccentStyles}>Services</span>
             </h1>
             <iframe src="https://app.acuityscheduling.com/schedule.php?owner=21610837" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+            <Footer />
         </main>
     )
 }

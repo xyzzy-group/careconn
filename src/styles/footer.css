@@ -20,7 +20,8 @@
 
 .care-conn-txt {
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-ico {

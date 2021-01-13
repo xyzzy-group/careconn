@@ -1,5 +1,6 @@
 import * as React from "react"
 import NavBar from "../partials/navbar";
+import Footer from "../partials/footer";
 require('../styles/global.css')
 
 // styles
@@ -144,6 +145,7 @@ const IndexPage = () => {
           </li>
         ))}
       </ul>
+      <Footer />
     </main>
   )
 }
