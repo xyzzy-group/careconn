@@ -26,6 +26,15 @@ const IndexPage = () => {
       <h1 style={headingStyles}>
         <span style={headingAccentStyles}>Home Page</span>
       </h1>
+      <ul>
+      <div className="home-contain">
+        <section className="banner"></section>
+      </div>
+      <div className="service-contain">
+
+      </div>
+
+      </ul>
     </main>
   )
 }

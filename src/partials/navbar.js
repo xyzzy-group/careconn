@@ -15,6 +15,9 @@ const NavBar = (props) => {
             <a href="/careconn/services">Services</a>
           </li>
           <li>
+            <a href="/careconn/schedule">Scheduler</a>
+          </li>
+          <li>
             <a href="/careconn/locations">Locations</a>
           </li>
           <li>
@@ -22,10 +25,6 @@ const NavBar = (props) => {
           </li>
         </ul>
       </nav>
-
-      <div className="img-contain">
-        <img src={require("../images/logo.png")} alt="care connection logo" />
-      </div>
     </>
   );
 };
