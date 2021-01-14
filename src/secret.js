@@ -1,8 +1,8 @@
 module.exports = getRoute => {
-    if (getRoute === "home") return "/careconn/";
-    if (getRoute === "services") return "/careconn/services";
-    if (getRoute === "schedule") return "/careconn/schedule";
-    if (getRoute === "locations") return "/careconn/locations";
-    if (getRoute === "faq") return "/careconn/faq";
+    if (getRoute === "home") return "/";
+    if (getRoute === "services") return "/services";
+    if (getRoute === "schedule") return "/schedule";
+    if (getRoute === "locations") return "/locations";
+    if (getRoute === "faq") return "/faq";
 }
 
