@@ -4,7 +4,7 @@ module.exports = {
     title: "Care Connection",
     description:
       "We are a multi-specialty group helping to improve lives since 1959. Our therapists are knowledgeable in a wide variety of mental health issues.",
-    url: "someurl.com",
+    url: "http://careconnectionphiladelphia.com/",
     image: "/logo.png",
   },
   plugins: [
@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Care Connection",
-        short_name: "carecon",
+        short_name: "careconn",
         start_url: "/",
         background_color: "#10c8ae",
         theme_color: "#8B5CF6",
